@@ -1,6 +1,5 @@
-var canvas = document.getElementById('gameCanvas')
-var ctx = canvas.getContext('2d')
-class Property {}
+var canvas = document.getElementById('gameCanvas');
+var ctx = canvas.getContext('2d');
 
 // make this into a decorator?
 
@@ -20,13 +19,13 @@ ctx.closePath();
 
 // init properties
 // TODO: generate these from flat "game board" files
-let prop1 = new Property('test', 500, 1000, 'A', 5, 5);
+var prop1 = new Property('test', 500, 1000, 'A', 500, 500);
 console.log(prop1);
 prop1.makeSquare();
 
 // draws the game board
 function drawBoard() {
   prop1.makeSquare();
-}
+};
 
 drawBoard();
